@@ -102,7 +102,6 @@ namespace WachtrijApp
             this.labelKar1.Size = new System.Drawing.Size(57, 18);
             this.labelKar1.TabIndex = 9;
             this.labelKar1.Text = "Kar 1: ...";
-            this.labelKar1.Click += new System.EventHandler(this.labelKar1_Click);
             // 
             // labelKar3
             // 
@@ -151,7 +150,6 @@ namespace WachtrijApp
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(279, 227);
             this.Controls.Add(this.Reset);
-            this.Controls.Add(this.btnUpdateWachtrij);
             this.Controls.Add(this.btnUpdateStatus);
             this.Controls.Add(this.labelTitleAlt);
             this.Controls.Add(this.labelKar3);
