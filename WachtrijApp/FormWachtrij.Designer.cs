@@ -151,7 +151,6 @@ namespace WachtrijApp
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(279, 227);
             this.Controls.Add(this.Reset);
-            this.Controls.Add(this.btnUpdateWachtrij);
             this.Controls.Add(this.btnUpdateStatus);
             this.Controls.Add(this.labelTitleAlt);
             this.Controls.Add(this.labelKar3);
