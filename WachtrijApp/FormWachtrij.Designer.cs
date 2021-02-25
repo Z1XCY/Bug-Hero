@@ -37,6 +37,7 @@
             this.labelKar1 = new System.Windows.Forms.Label();
             this.labelKar3 = new System.Windows.Forms.Label();
             this.labelTitleAlt = new System.Windows.Forms.Label();
+            this.Reset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@
             this.labelKar1.Size = new System.Drawing.Size(57, 18);
             this.labelKar1.TabIndex = 9;
             this.labelKar1.Text = "Kar 1: ...";
+            this.labelKar1.Click += new System.EventHandler(this.labelKar1_Click);
             // 
             // labelKar3
             // 
@@ -119,12 +121,25 @@
             this.labelTitleAlt.Size = new System.Drawing.Size(0, 13);
             this.labelTitleAlt.TabIndex = 11;
             // 
+            // Reset
+            // 
+            this.Reset.BackColor = System.Drawing.Color.DarkCyan;
+            this.Reset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Reset.Location = new System.Drawing.Point(168, 62);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(110, 23);
+            this.Reset.TabIndex = 12;
+            this.Reset.Text = "Reset";
+            this.Reset.UseVisualStyleBackColor = false;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
+            // 
             // FormWachtrij
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(279, 227);
+            this.Controls.Add(this.Reset);
             this.Controls.Add(this.labelTitleAlt);
             this.Controls.Add(this.labelKar3);
             this.Controls.Add(this.labelKar1);
@@ -153,6 +168,7 @@
         private System.Windows.Forms.Label labelKar1;
         private System.Windows.Forms.Label labelKar3;
         private System.Windows.Forms.Label labelTitleAlt;
+        private System.Windows.Forms.Button Reset;
     }
 }
 

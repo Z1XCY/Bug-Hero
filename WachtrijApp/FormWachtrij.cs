@@ -182,5 +182,18 @@ namespace WachtrijApp
         {
 
         }
+
+        private void labelKar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            labelKar1.Text = "Kar 1:...";
+            labelKar2.Text = "Kar 2:...";
+            labelKar3.Text = "Kar 3:...";
+            labelWachttijdMelding.Text = "0 minuten";
+        }
     }
 }
