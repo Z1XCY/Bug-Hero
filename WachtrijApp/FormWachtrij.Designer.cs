@@ -36,6 +36,7 @@
             this.labelKar2 = new System.Windows.Forms.Label();
             this.labelKar1 = new System.Windows.Forms.Label();
             this.labelKar3 = new System.Windows.Forms.Label();
+            this.btnUpdateWachtrij = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             // 
             this.labelWachttijd.AutoSize = true;
             this.labelWachttijd.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWachttijd.Location = new System.Drawing.Point(27, 149);
+            this.labelWachttijd.Location = new System.Drawing.Point(27, 170);
             this.labelWachttijd.Name = "labelWachttijd";
             this.labelWachttijd.Size = new System.Drawing.Size(99, 25);
             this.labelWachttijd.TabIndex = 4;
@@ -63,7 +64,7 @@
             // 
             this.labelWachttijdMelding.AutoSize = true;
             this.labelWachttijdMelding.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWachttijdMelding.Location = new System.Drawing.Point(29, 174);
+            this.labelWachttijdMelding.Location = new System.Drawing.Point(29, 195);
             this.labelWachttijdMelding.Name = "labelWachttijdMelding";
             this.labelWachttijdMelding.Size = new System.Drawing.Size(71, 18);
             this.labelWachttijdMelding.TabIndex = 5;
@@ -110,12 +111,23 @@
             this.labelKar3.TabIndex = 10;
             this.labelKar3.Text = "Kar 3: ...";
             // 
+            // btnUpdateWachtrij
+            // 
+            this.btnUpdateWachtrij.Location = new System.Drawing.Point(32, 135);
+            this.btnUpdateWachtrij.Name = "btnUpdateWachtrij";
+            this.btnUpdateWachtrij.Size = new System.Drawing.Size(109, 23);
+            this.btnUpdateWachtrij.TabIndex = 11;
+            this.btnUpdateWachtrij.Text = "Update status";
+            this.btnUpdateWachtrij.UseVisualStyleBackColor = true;
+            this.btnUpdateWachtrij.Click += new System.EventHandler(this.btnUpdateWachtrij_Click);
+            // 
             // FormWachtrij
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(279, 227);
+            this.Controls.Add(this.btnUpdateWachtrij);
             this.Controls.Add(this.labelKar3);
             this.Controls.Add(this.labelKar1);
             this.Controls.Add(this.labelKar2);
@@ -126,7 +138,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormWachtrij";
             this.Text = "Debug Hero";
-            this.Load += new System.EventHandler(this.FormWachtrij_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -142,6 +153,7 @@
         private System.Windows.Forms.Label labelKar2;
         private System.Windows.Forms.Label labelKar1;
         private System.Windows.Forms.Label labelKar3;
+        private System.Windows.Forms.Button btnUpdateWachtrij;
     }
 }
 

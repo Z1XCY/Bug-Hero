@@ -163,7 +163,10 @@ namespace WachtrijApp
         }
 
         private void FormWachtrij_Load(object sender, EventArgs e)
+        private void btnUpdateWachtrij_Click(object sender, EventArgs e)
         {
+            VerwerkAttractieStatusData();
+        }
 
         }
     }
