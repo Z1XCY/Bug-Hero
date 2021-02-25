@@ -194,12 +194,7 @@ namespace WachtrijApp
         private void updateTimer_Tick(object sender, EventArgs e)
         {
             VerwerkAttractieStatusData();
-            BerekenWachttijd();
-        }
-
-        private void labelKar1_Click(object sender, EventArgs e)
-        {
-
+            VerwerkWachtrijSensorData();
         }
 
         private void Reset_Click(object sender, EventArgs e)
