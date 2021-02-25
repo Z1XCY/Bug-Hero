@@ -178,7 +178,7 @@ namespace WachtrijApp
             }
             return "";
         }
-        private void btnUpdateWachtrij_Click(object sender, EventArgs e)
+        private void btnUpdateStatus_Click(object sender, EventArgs e)
         {
             VerwerkAttractieStatusData();
         }
