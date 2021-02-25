@@ -10,6 +10,8 @@ namespace WachtrijApp
         public FormWachtrij()
         {
             InitializeComponent();
+            InitTimer();
+            VerwerkAttractieStatusData();
         }
 
         //  Er is op het logo geklikt. Die actie start een event welke de onderstaande methode aanroept.
@@ -38,7 +40,7 @@ namespace WachtrijApp
         private void VerwerkWachtrijSensorData()
         {
             //  Roep de methode aan welke de wachttijd berekend.
-            int Wachttijd = BerekenWachttijd();
+            double Wachttijd = BerekenWachttijd();
 
             //  Gebruik de wachttijd om de tekst in de label 'labelWachttijdMelding' aan te passen.
             this.labelWachttijdMelding.Text = $"{Wachttijd} minuten";
@@ -46,9 +48,9 @@ namespace WachtrijApp
 
         //  Deze methode leest de sensordata in het betreffende XML bestand.
         //  Deze methode berekend vervolgens de de wachttijd in minuten en geeft deze terug.
-        private int BerekenWachttijd()
+        private double BerekenWachttijd()
         {
-            int Wachttijd = 0;
+            double Wachttijd = 0;
 
             //  Lees het XML WachtrijSensoren bestand uit welke meet waar mensen staan te wachten.
             XmlDocument doc = new XmlDocument();
@@ -76,56 +78,56 @@ namespace WachtrijApp
             {
                 return Wachttijd;
             }
-            Wachttijd += 4;
+            Wachttijd += 3.5;
 
             string node04 = doc.DocumentElement.SelectSingleNode("/Sensoren/Sensor04").InnerText;
             if (node04 == "False")
             {
                 return Wachttijd;
             }
-            Wachttijd += 4;
+            Wachttijd += 3.5;
 
             string node05 = doc.DocumentElement.SelectSingleNode("/Sensoren/Sensor05").InnerText;
             if (node05 == "False")
             {
                 return Wachttijd;
             }
-            Wachttijd += 4;
+            Wachttijd += 3.5;
 
             string node06 = doc.DocumentElement.SelectSingleNode("/Sensoren/Sensor06").InnerText;
             if (node06 == "False")
             {
                 return Wachttijd;
             }
-            Wachttijd += 4;
+            Wachttijd += 3.5;
 
             string node07 = doc.DocumentElement.SelectSingleNode("/Sensoren/Sensor07").InnerText;
             if (node07 == "False")
             {
                 return Wachttijd;
             }
-            Wachttijd += 4;
+            Wachttijd += 3.5;
 
             string node08 = doc.DocumentElement.SelectSingleNode("/Sensoren/Sensor08").InnerText;
             if (node08 == "False")
             {
                 return Wachttijd;
             }
-            Wachttijd += 4;
+            Wachttijd += 3.5;
 
             string node09 = doc.DocumentElement.SelectSingleNode("/Sensoren/Sensor09").InnerText;
             if (node09 == "False")
             {
                 return Wachttijd;
             }
-            Wachttijd += 4;
+            Wachttijd += 3.5;
 
             string node10 = doc.DocumentElement.SelectSingleNode("/Sensoren/Sensor10").InnerText;
             if (node10 == "False")
             {
                 return Wachttijd;
             }
-            Wachttijd += 4;
+            Wachttijd += 3.5;
 
             return Wachttijd;
         }
@@ -174,13 +176,25 @@ namespace WachtrijApp
             {
                 return "Komt binnen";
             }
-
             return "";
         }
-
-        private void FormWachtrij_Load(object sender, EventArgs e)
+        private void btnUpdateStatus_Click(object sender, EventArgs e)
         {
+            VerwerkAttractieStatusData();
+        }
+        private Timer updateTimer;
+        public void InitTimer() 
+        {
+            updateTimer = new Timer();
+            updateTimer.Tick += new EventHandler(updateTimer_Tick);
+            updateTimer.Interval = 10000;
+            updateTimer.Start();
+        }
 
+        private void updateTimer_Tick(object sender, EventArgs e)
+        {
+            VerwerkAttractieStatusData();
+            BerekenWachttijd();
         }
 
         private void labelKar1_Click(object sender, EventArgs e)
