@@ -187,7 +187,7 @@ namespace WachtrijApp
         {
             updateTimer = new Timer();
             updateTimer.Tick += new EventHandler(updateTimer_Tick);
-            updateTimer.Interval = 10000;
+            updateTimer.Interval = 5000;
             updateTimer.Start();
         }
 
