@@ -6,6 +6,7 @@ namespace WachtrijApp
 {
     public partial class FormWachtrij : Form
     {
+        int Clickcounter = 0;
         public FormWachtrij()
         {
             InitializeComponent();
@@ -16,9 +17,24 @@ namespace WachtrijApp
         //  Er is op het logo geklikt. Die actie start een event welke de onderstaande methode aanroept.
         private void AttractieLogo_Click(object sender, EventArgs e)
         {
+            Clickcounter += 1;
+
             VerwerkWachtrijSensorData();
 
             VerwerkAttractieStatusData();
+            if (Clickcounter == 3)
+            {
+
+                labelTitel.Text = "Stop the clicks,";
+                labelTitleAlt.Text = "I'm working";
+
+            }
+            if (Clickcounter >= 4)
+            {
+                Clickcounter = 0;
+                labelTitel.Text = "Debug Hero";
+                labelTitleAlt.Text = "";
+            }
         }
 
         private void VerwerkWachtrijSensorData()
