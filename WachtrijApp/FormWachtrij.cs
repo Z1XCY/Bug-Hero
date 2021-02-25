@@ -9,6 +9,8 @@ namespace WachtrijApp
         public FormWachtrij()
         {
             InitializeComponent();
+            InitTimer();
+            VerwerkAttractieStatusData();
         }
 
         //  Er is op het logo geklikt. Die actie start een event welke de onderstaande methode aanroept.
@@ -158,16 +160,25 @@ namespace WachtrijApp
             {
                 return "Komt binnen";
             }
-
             return "";
         }
-
-        private void FormWachtrij_Load(object sender, EventArgs e)
         private void btnUpdateWachtrij_Click(object sender, EventArgs e)
         {
             VerwerkAttractieStatusData();
         }
+        private Timer updateTimer;
+        public void InitTimer() 
+        {
+            updateTimer = new Timer();
+            updateTimer.Tick += new EventHandler(updateTimer_Tick);
+            updateTimer.Interval = 10000;
+            updateTimer.Start();
+        }
 
+        private void updateTimer_Tick(object sender, EventArgs e)
+        {
+            VerwerkAttractieStatusData();
+            BerekenWachttijd();
         }
     }
 }
