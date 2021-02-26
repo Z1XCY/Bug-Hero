@@ -76,7 +76,7 @@ namespace WachtrijApp
             // 
             this.AttractieLogo.ErrorImage = null;
             this.AttractieLogo.Image = ((System.Drawing.Image)(resources.GetObject("AttractieLogo.Image")));
-            this.AttractieLogo.Location = new System.Drawing.Point(168, 87);
+            this.AttractieLogo.Location = new System.Drawing.Point(208, 88);
             this.AttractieLogo.Name = "AttractieLogo";
             this.AttractieLogo.Size = new System.Drawing.Size(110, 141);
             this.AttractieLogo.TabIndex = 6;
@@ -135,7 +135,7 @@ namespace WachtrijApp
             // 
             this.Reset.BackColor = System.Drawing.Color.DarkCyan;
             this.Reset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Reset.Location = new System.Drawing.Point(168, 62);
+            this.Reset.Location = new System.Drawing.Point(208, 63);
             this.Reset.Name = "Reset";
             this.Reset.Size = new System.Drawing.Size(110, 23);
             this.Reset.TabIndex = 12;
@@ -148,7 +148,7 @@ namespace WachtrijApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(279, 227);
+            this.ClientSize = new System.Drawing.Size(330, 227);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.btnUpdateStatus);
             this.Controls.Add(this.labelTitleAlt);

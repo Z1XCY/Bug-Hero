@@ -176,6 +176,10 @@ namespace WachtrijApp
             {
                 return "Komt binnen";
             }
+            if (StatusNr == "5")
+            {
+                return "Kar uitgeschakeld";
+            }
             return "";
         }
         private void btnUpdateStatus_Click(object sender, EventArgs e)

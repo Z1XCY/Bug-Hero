@@ -22,3 +22,15 @@ C:\Users\Vario\Documents\GitHub\Nieuwe map\Bug-Hero\WachtrijApp\obj\Debug\Wachtr
 C:\Users\Vario\Documents\GitHub\Nieuwe map\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.csproj.CoreCompileInputs.cache
 C:\Users\Vario\Documents\GitHub\Nieuwe map\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.exe
 C:\Users\Vario\Documents\GitHub\Nieuwe map\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.pdb
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\bin\Debug\SensorData\AttractieStatus.xml
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\bin\Debug\SensorData\WachtrijSensoren.xml
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\bin\Debug\WachtrijApp.exe.config
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\bin\Debug\WachtrijApp.exe
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\bin\Debug\WachtrijApp.pdb
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.csprojAssemblyReference.cache
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.FormWachtrij.resources
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.Properties.Resources.resources
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.csproj.GenerateResource.cache
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.csproj.CoreCompileInputs.cache
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.exe
+C:\Users\Zicxy\OneDrive\Documents\GitHub\Bug-Hero\WachtrijApp\obj\Debug\WachtrijApp.pdb
