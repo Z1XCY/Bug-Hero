@@ -45,20 +45,20 @@ namespace WachtrijApp
             // labelTitel
             // 
             this.labelTitel.AutoSize = true;
-            this.labelTitel.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitel.Location = new System.Drawing.Point(26, 18);
+            this.labelTitel.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitel.Location = new System.Drawing.Point(26, 19);
             this.labelTitel.Name = "labelTitel";
-            this.labelTitel.Size = new System.Drawing.Size(152, 32);
+            this.labelTitel.Size = new System.Drawing.Size(171, 33);
             this.labelTitel.TabIndex = 0;
             this.labelTitel.Text = "Debug Hero";
             // 
             // labelWachttijd
             // 
             this.labelWachttijd.AutoSize = true;
-            this.labelWachttijd.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWachttijd.Location = new System.Drawing.Point(27, 170);
+            this.labelWachttijd.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWachttijd.Location = new System.Drawing.Point(27, 168);
             this.labelWachttijd.Name = "labelWachttijd";
-            this.labelWachttijd.Size = new System.Drawing.Size(99, 25);
+            this.labelWachttijd.Size = new System.Drawing.Size(112, 27);
             this.labelWachttijd.TabIndex = 4;
             this.labelWachttijd.Text = "Wachttijd";
             // 
